@@ -74,6 +74,7 @@ export default function Dashboard() {
                     <label htmlFor="date">Date:</label>
                     <Input 
                             id="date"
+                            type="date"
                             value={form.data.date}
                             onChange={(event) => form.setData('date', event.target.value)}
                             />
@@ -84,6 +85,7 @@ export default function Dashboard() {
                     <label htmlFor="time">Time:</label>
                     <Input 
                             id="time"
+                            type="time"
                             value={form.data.time}
                             onChange={(event) => form.setData('time', event.target.value)}
                             />
