@@ -35,7 +35,9 @@ export default function Dashboard() {
                             id="name"
                             value={form.data.name}
                             onChange={(event) => form.setData('name', event.target.value)}
+                            placeholder="Enter event name"
                             />
+                            placeholder="Enter event name"
                             {form.errors.name && <p className="text-sm text-red-600">{form.errors.name}</p>}
                     </div>
 
@@ -46,6 +48,7 @@ export default function Dashboard() {
                             id="description"
                             value={form.data.description}
                             onChange={(event) => form.setData('description', event.target.value)}
+                            placeholder="Enter event description"
                             />
                     </div>
 
@@ -56,7 +59,9 @@ export default function Dashboard() {
                             id="contactnumber"
                             value={form.data.contactnumber}
                             onChange={(event) => form.setData('contactnumber', event.target.value)}
+                            placeholder="Enter contact number"
                             />
+                            
                             {form.errors.contactnumber && <p className="text-sm text-red-600">{form.errors.contactnumber}</p>}
                     </div>
 
@@ -66,6 +71,7 @@ export default function Dashboard() {
                             id="venue"
                             value={form.data.venue}
                             onChange={(event) => form.setData('venue', event.target.value)}
+                            placeholder="Enter venue"
                             />
                             {form.errors.venue && <p className="text-sm text-red-600">{form.errors.venue}</p>}
                     </div>
@@ -77,6 +83,7 @@ export default function Dashboard() {
                             type="date"
                             value={form.data.date}
                             onChange={(event) => form.setData('date', event.target.value)}
+                            placeholder="Select date"
                             />
                             {form.errors.date && <p className="text-sm text-red-600">{form.errors.date}</p>}
                     </div>
@@ -88,6 +95,8 @@ export default function Dashboard() {
                             type="time"
                             value={form.data.time}
                             onChange={(event) => form.setData('time', event.target.value)}
+                            placeholder="Select time"
+                            
                             />
                             {form.errors.time && <p className="text-sm text-red-600">{form.errors.time}</p>}
                     </div>
